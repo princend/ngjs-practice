@@ -1,0 +1,85 @@
+<!-- <a href="#!/phones/" class="thumb">回主頁</a>
+
+<div ng-repeat="trend in $ctrl.phones">
+    <div ng-dblclick="$ctrl.onDblclick(trend)">
+        {{trend.id}}
+        {{trend.name|uppercase}}
+        <span ng-bind="trend.snippet"></span> {{trend.snippet}}
+    </div>
+</div>
+
+<input type="datetime-local" ng-model="string" [name="string" ] [min="string" ] [max="string" ] [ng-min="" ] [ng-max=""
+    ] [required="string" ] [ng-required="string" ] [ng-change="string" ]> -->
+
+
+<!-- 
+<ol ng-init="names=['John', 'Mary', 'Cate', 'Suz']">
+    <li ng-repeat="name in names">
+        <span ng-class-odd="'test-odd'" ng-class-even="'test-even'">
+            {{name}}
+        </span>
+    </li>
+</ol> -->
+
+
+<div >
+ <h3><a href="#!/home/" class="" style="color:black;">回主頁</a></h3>
+</div>
+<div style="padding:5px;height:100%;width:877px;padding-top: 40px;">
+    <div style="border:2px dashed blue">
+        <div style="color:blue;font-size: 26px;">子元件</div>
+        <search-option placeholder="會員等級選項篩選" input-typing="$ctrl.inputTyping(value)"></search-option>
+    </div>
+</div>
+
+<div class="ax_default shape table_header">
+    <div class="text">
+        <p>
+            <span>會員等級
+            </span>
+        </p>
+    </div>
+</div>
+<div class="ax_default shape table_body" style="padding-bottom: 10px;">
+    <label style="display: inline-block;min-width: 20%;margin-top:10px;padding-left:30px;">
+        <input type="checkbox" ng-model="$ctrl.allCheck" ng-change="$ctrl.checkAll()">
+        全選
+    </label>
+    <div style="display: flex;
+    min-height: 40px;
+    flex: 1 1 87%;
+    padding-left: 30px;
+    flex-wrap: wrap;">
+        <label ng-repeat="level in $ctrl.memberLevels" style="display: inline-block;min-width: 20%;margin-top:10px;"
+            ng-if="level.show">
+            <input type="checkbox" ng-model="level.selected" ng-change="$ctrl.checkSingle()">
+            {{level.name}}
+        </label>
+    </div>
+</div>
+
+
+
+<div style="margin-top:50px;border:2px solid black;width:877px;">
+<h2> <span style="color:red">練習項目</span></h2>
+<h4> <span style="color:purple">1.DOM事件綁定</span></h4>
+<h4> <span style="color:purple">2.父元件與子元件 事件與屬性綁定</span></h4>
+
+</div>
+<!-- <div class="ax_default shape table_header" style="margin-top: 50px;">
+    <div class="text" style="display: inline-block;">
+
+        <span>投注條件
+        </span>
+
+
+    </div>
+    <div style="float: right;padding-right: 10px;color:#428BCA;cursor: pointer;" class="hover_underline"
+        ng-click=$ctrl.changeCondition()>
+        {{$ctrl.stair?'設定單一式條件':'設定階梯式條件'}}
+        <i class="fa fa-info-circle" aria-hidden="true" ng-if="!$ctrl.stair"></i>
+    </div>
+</div>
+<div class="ax_default shape table_body" style="height: 219px;">
+
+</div> -->

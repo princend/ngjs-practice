@@ -1,0 +1,31 @@
+[
+    {
+        "age": 0,
+        "id": "apple",
+        "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg",
+        "name": "APPLE",
+        "snippet": "貧果"
+    },
+    {
+        "age": 1,
+        "id": "google",
+        "imageUrl": "img/phones/motorola-xoom.0.jpg",
+        "name": "GOOGLE",
+        "snippet": "股歌"
+    },
+    {
+        "age": 2,
+        "carrier": "AT&T",
+        "id": "windows",
+        "imageUrl": "img/phones/motorola-atrix-4g.0.jpg",
+        "name": "windows",
+        "snippet": "微軟"
+    },
+    {
+        "age": 3,
+        "id": "htc",
+        "imageUrl": "img/phones/dell-streak-7.0.jpg",
+        "name": "HTC",
+        "snippet": "宏達"
+    }
+]

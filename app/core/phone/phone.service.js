@@ -9,7 +9,14 @@ angular.
           method: 'GET',
           params: {phoneId: 'phones'},
           isArray: true
-        }
+        },
+        test: {
+          method: 'GET',
+          params: {aaa: 'phones'},
+          isArray: true
+        },
       });
     }
-  ]);
+  ])
+  .factory()
+  ;

@@ -1,0 +1,10 @@
+<h3>首頁</h3>
+<div>
+    <div ng-repeat="chapter in self.chapters" style="border-radius: 5px;border:1px solid #cbcbcb;height: 200px;width:200px;
+box-shadow: 0 4px 15px 0 rgba(40, 44, 53, 0.06), 0 2px 2px 0 rgba(40, 44, 53, 0.08);margin-left: 10px;
+background-color: #cbcbcb;display: inline-block; vertical-align: center;" class="card" ng-click=self.navigate(chapter)>
+        <div style="text-align: center;line-height: 200px;font-size:24px ;font-weight: bolder;">
+            <span> {{chapter.name}}</span>
+        </div>
+    </div>
+</div>
