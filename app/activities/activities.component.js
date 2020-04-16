@@ -4,7 +4,6 @@ var ActivitiesController = function () {
     self.url=location.href;
 }
 
-
 var activities =
     [{
         id: 1,

@@ -4,7 +4,6 @@
 //     console.log('discount success!!')
 // }
 
-
 activitiesMudule.registerCtrl('DiscountWalletController', function ($scope) {
     $scope.url = location.href;
     console.log('discount-wallet');
