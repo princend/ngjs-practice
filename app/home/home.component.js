@@ -8,16 +8,17 @@ angular.module('home', []).
                 var self = this;
                 self.chapters = chapters;
                 self.navigate = function (chapter) {
-                location.href=`${chapter.url}`
+                    console.log('ddd',chapter)
+                    location.href = `${chapter.url}`
 
                 }
             }
         ],
         controllerAs: 'self'
-    });
-
+    })
 
 const chapters = [
     { lesson: 1, name: '元件', url: '/#!/trend' },
-    { lesson: 2, name: '路由', url: '/#!/activities' }
+    { lesson: 2, name: '路由', url: '/#!/activities' },
+    { lesson: 3, name: '過濾器', url: '/#!/filter' }
 ]

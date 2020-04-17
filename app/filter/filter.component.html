@@ -1,0 +1,22 @@
+<div>
+    <h3><a href="#!/home/" class="" style="color:black;">回主頁</a></h3>
+</div>
+
+<input type="date" ng-model="self.date">
+
+<button ng-click="self.addDate()">轉換</button>
+
+
+<div>
+    <h3>
+        目前轉換日期:
+    </h3>
+</div>
+<div ng-repeat="item in self.dateArr track by $index">
+  <div style="height:50px;line-height: 50px;"> <span>未轉換格式 : {{item}} </span>,<span>轉換後格式 : <span style="color:blue;font-size: 20px;">{{item|localeDate}}</span></span></div>
+</div>
+
+<div style="margin-top:50px;border:2px solid black;width:877px;">
+    <h2> <span style="color:red">練習項目</span></h2>
+    <h4> <span style="color:purple">1.資料格式化</span></h4>
+</div>

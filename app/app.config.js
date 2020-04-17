@@ -20,6 +20,9 @@ angular.
         when('/activities', {
           template: '<activities></activities>'
         }).
+        when('/filter', {
+          template: '<filter></filter>'
+        }).
         otherwise('/home');
     }
   ]);

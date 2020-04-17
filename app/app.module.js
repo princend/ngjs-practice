@@ -5,9 +5,10 @@ angular.module('myApp', [
   'ngAnimate',
   'ngRoute',
   'core',
+  'home',
   'phoneDetail',
   'phoneList',
   'trend',
+  'filter',
   'activities',
-  'home'
 ]);
