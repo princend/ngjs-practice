@@ -1,5 +1,5 @@
 //jshint strict: false
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     basePath: './app',
@@ -11,16 +11,18 @@ module.exports = function(config) {
       'lib/angular-route/angular-route.js',
       '../node_modules/angular-mocks/angular-mocks.js',
       '**/*.module.js',
+      '**/*.component.js',
       '*!(.module|.spec).js',
       '!(lib)/**/*!(.module|.spec).js',
-      '**/*.spec.js'
+      '**/*.spec.js',
+      'activities*/**/*.js'
     ],
 
     autoWatch: true,
 
     frameworks: ['jasmine'],
 
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Chrome'],
 
     plugins: [
       'karma-chrome-launcher',

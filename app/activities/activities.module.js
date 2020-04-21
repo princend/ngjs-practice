@@ -1,6 +1,13 @@
 
 var activitiesMudule = angular.module('activities', ['ngRoute', 'oc.lazyLoad']);
 
+var ActivitiesController = function () {
+    var self = this;
+    self.activities = activities;
+    self.url=location.href;
+}
+
+// var ActivitiesController = require('./activities.component').ActivitiesController;
 
 
 /**元件 */
